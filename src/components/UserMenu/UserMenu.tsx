@@ -106,7 +106,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
 
     const { isOpen, isClickable } = this.state
 
-    const name = avatar ? avatar.name : null
+    // const name = avatar ? avatar.name : null
 
     return (
       <Row className="dcl user-menu-wrapper">
