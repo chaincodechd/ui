@@ -14,7 +14,7 @@ export type UserMenuI18N = {
   signOut: React.ReactNode
   guest: React.ReactNode
   settings: React.ReactNode
-  account: React.ReactNode
+  // account: React.ReactNode
 }
 
 export type UserMenuProps = {
@@ -48,7 +48,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
       signOut: 'Sign Out',
       guest: 'Guest',
       settings: 'Settings',
-      account: 'Account'
+      // account: 'Account'
     }
   }
 
@@ -150,20 +150,20 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
                   className={`info ${onClickProfile ? 'clickable' : ''}`}
                   onClick={onClickProfile}
                 >
-                  <div className="image">
+                  {/* <div className="image">
                     <AvatarFace size="small" avatar={avatar} />
-                  </div>
-                  <div>
+                  </div> */}
+                  {/* <div>
                     <div className="name">{name || i18n.guest}</div>
-                  </div>
+                  </div> */}
                 </div>
                 <ul className="actions">
-                  <a href="https://account.decentraland.org">
+                  {/* <a href="https://account.decentraland.org">
                     <li>
                       <Icon name="user"></Icon>
                       {i18n.account}
                     </li>
-                  </a>
+                  </a> */}
                   {menuItems}
                   {onClickSettings ? (
                     <li onClick={onClickSettings}>

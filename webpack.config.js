@@ -5,6 +5,7 @@ const postcssPresetEnv = require('postcss-preset-env')
 const postcssAssets = require('postcss-assets')
 const path = require('path')
 
+
 module.exports = {
   mode: 'production',
   entry: './src/index.ts',
