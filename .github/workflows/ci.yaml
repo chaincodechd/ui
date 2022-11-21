@@ -25,9 +25,6 @@ jobs:
     - name: Build
       run: npm run-script build
 
-    - name: Test
-      run: npm test
-
     - name: Publish
       run: npm publish --access public
       env:
