@@ -16,10 +16,9 @@ jobs:
     - name: Setup node
       uses: actions/setup-node@v3
       with:
-        node-version: '16.x'
+        node-version: '18.x'
         registry-url: 'https://registry.npmjs.org'
-        # registry-url: 'https://npm.pkg.github.com'
-        scope: '@octocat'
+        scope: '@soundaryaayyappan'
 
     # - run: npm install
 
