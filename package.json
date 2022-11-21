@@ -1,5 +1,5 @@
 {
-  "name": "wgy-v2",
+  "name": "wgy-v1",
   "version": "0.0.1-development",
   "description": "Decentraland's UI components and styles",
   "main": "lib/index.js",
