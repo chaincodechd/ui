@@ -1,5 +1,5 @@
 {
-  "name": "ui-v1",
+  "name": "ui",
   "version": "1.0.0",
   "description": "<img src=\"https://ui.decentraland.org/decentraland_256x256.png\" height=\"128\" width=\"128\" />",
   "main": ".eslintrc.js",
