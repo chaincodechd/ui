@@ -11,20 +11,20 @@ See: [ui.decentraland.org](https://ui.decentraland.org)
 Install it:
 
 ```bash
-npm install --save @ccl-shashank/decentraland-ui
+npm install --save @ccl-shashank/@ccl-shashank/decentraland-ui
 ```
 
 Import Decentraland UI's styles in your App's entry point
 
 ```jsx
-import '@ccl-shashank/decentraland-ui/lib/styles.css'
+import '@ccl-shashank/@ccl-shashank/decentraland-ui/lib/styles.css'
 ```
 
 Now you can use Decentraland UI's components
 
 ```jsx
 import React from 'react'
-import { Button } from '@ccl-shashank/decentraland-ui'
+import { Button } from '@ccl-shashank/@ccl-shashank/decentraland-ui'
 
 export class MyApp extends React.Component {
   render() {
@@ -35,7 +35,7 @@ export class MyApp extends React.Component {
 
 ### Without React
 
-You can also use `@ccl-shashank/decentraland-ui` as a CSS framework just by adding this tag in your `<head>`:
+You can also use `@ccl-shashank/@ccl-shashank/decentraland-ui` as a CSS framework just by adding this tag in your `<head>`:
 
 ```html
 <link href="https://ui.decentraland.org/styles.css" rel="stylesheet" />
@@ -57,14 +57,14 @@ You can import just the essential component and reduce the size of your bundles,
 // import css
 import 'semantic-ui-css/semantic.min.css'
 import 'balloon-css/balloon.min.css'
-import '@ccl-shashank/decentraland-ui/dist/themes/base-theme.css'
-import '@ccl-shashank/decentraland-ui/dist/themes/alternative/light-theme.css'
-// or import '@ccl-shashank/decentraland-ui/dist/themes/alternative/dark-theme.css'
+import '@ccl-shashank/@ccl-shashank/decentraland-ui/dist/themes/base-theme.css'
+import '@ccl-shashank/@ccl-shashank/decentraland-ui/dist/themes/alternative/light-theme.css'
+// or import '@ccl-shashank/@ccl-shashank/decentraland-ui/dist/themes/alternative/dark-theme.css'
 
 // Then import just the components you will use
 import Grid from 'semantic-ui-react/dist/commonjs/collections/Grid/Grid'
-import { Button } from '@ccl-shashank/decentraland-ui/dist/components/Button/Button'
-import { Card } from '@ccl-shashank/decentraland-ui/dist/components/Card/Card'
+import { Button } from '@ccl-shashank/@ccl-shashank/decentraland-ui/dist/components/Button/Button'
+import { Card } from '@ccl-shashank/@ccl-shashank/decentraland-ui/dist/components/Card/Card'
 ```
 
 ## Alternative themes
@@ -72,8 +72,8 @@ import { Card } from '@ccl-shashank/decentraland-ui/dist/components/Card/Card'
 You can use one of our alternative themes by importing in after Decentraland UI's styles, like this:
 
 ```jsx
-import '@ccl-shashank/decentraland-ui/lib/styles.css'
-import '@ccl-shashank/decentraland-ui/lib/dark-theme.css'
+import '@ccl-shashank/@ccl-shashank/decentraland-ui/lib/styles.css'
+import '@ccl-shashank/@ccl-shashank/decentraland-ui/lib/dark-theme.css'
 ```
 
 Or you can create your own theme like this:

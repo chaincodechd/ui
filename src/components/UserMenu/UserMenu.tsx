@@ -146,7 +146,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
                   isClickable ? 'clickable' : ''
                 }`}
               >
-                {/* <div
+                <div
                   className={`info ${onClickProfile ? 'clickable' : ''}`}
                   onClick={onClickProfile}
                 >
@@ -156,7 +156,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
                   <div>
                     <div className="name">{name || i18n.guest}</div>
                   </div>
-                </div> */}
+                </div>
                 <ul className="actions">
                   {/* <a href="https://account.decentraland.org">
                     <li>
