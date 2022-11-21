@@ -18,10 +18,11 @@ jobs:
       with:
         node-version: '18.x'
         registry-url: 'https://registry.npmjs.org'
-        scope: '@soundaryaayyappan'
+        # scope: '@soundaryaayyappan'
 
     # - run: npm install
 
-    - run: npm publish --scope=@soundaryaayyappan
+    - name: Publish
+      run: npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
