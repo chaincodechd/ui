@@ -1,6 +1,6 @@
 {
   "name": "decentraland-ui",
-  "version": "1.0.0-development",
+  "version": "0.0.0-development",
   "description": "Decentraland's UI components and styles",
   "main": "lib/index.js",
   "module": "dist/index.js",
@@ -24,6 +24,7 @@
     "url": "git+https://github.com/decentraland/ui.git"
   },
   "keywords": [
+    "decentraland",
     "ui",
     "react",
     "semantic-ui",
