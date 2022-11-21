@@ -24,7 +24,6 @@
     "url": "git+https://github.com/decentraland/ui.git"
   },
   "keywords": [
-    "decentraland",
     "ui",
     "react",
     "semantic-ui",
