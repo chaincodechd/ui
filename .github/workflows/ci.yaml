@@ -14,15 +14,13 @@ jobs:
       name: Check out code
 
     - name: Setup node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v2
       with:
-        node-version: '18.x'
-        registry-url: 'https://registry.npmjs.org'
-        # scope: '@soundaryaayyappan'
-
-    # - run: npm install
+        node-version: 16.x
+        registry-url: https://registry.npmjs.org
 
     - name: Publish
       run: npm publish --access public
+      working-directory: ui
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
