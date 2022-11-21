@@ -47,7 +47,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
       signIn: 'Sign In',
       signOut: 'Sign Out',
       guest: 'Guest',
-      settings: 'Settings',
+      settings: 'Settings'
       // account: 'Account'
     }
   }
@@ -146,17 +146,17 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
                   isClickable ? 'clickable' : ''
                 }`}
               >
-                <div
+                {/* <div
                   className={`info ${onClickProfile ? 'clickable' : ''}`}
                   onClick={onClickProfile}
                 >
-                  {/* <div className="image">
+                  <div className="image">
                     <AvatarFace size="small" avatar={avatar} />
-                  </div> */}
-                  {/* <div>
+                  </div>
+                  <div>
                     <div className="name">{name || i18n.guest}</div>
-                  </div> */}
-                </div>
+                  </div>
+                </div> */}
                 <ul className="actions">
                   {/* <a href="https://account.decentraland.org">
                     <li>
