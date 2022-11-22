@@ -11,13 +11,13 @@ import './Navbar.css'
 export type NavbarI18N = {
   menu: {
     marketplace: React.ReactNode
-    docs: React.ReactNode
-    events: React.ReactNode
-    places: React.ReactNode
-    agora: React.ReactNode
-    dao: React.ReactNode
-    blog: React.ReactNode
-    builder: React.ReactNode
+    // docs: React.ReactNode
+    // events: React.ReactNode
+    // places: React.ReactNode
+    // agora: React.ReactNode
+    // dao: React.ReactNode
+    // blog: React.ReactNode
+    // builder: React.ReactNode
   }
   account: {
     signIn: React.ReactNode
@@ -66,14 +66,14 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
     middleMenu: null,
     i18n: {
       menu: {
-        marketplace: 'Marketplace',
-        docs: 'Docs',
-        events: 'Events',
-        places: 'Places',
-        agora: 'Agora',
-        dao: 'DAO',
-        blog: 'Blog',
-        builder: 'Builder'
+        marketplace: 'CCL Marketplace',
+        // docs: 'Docs',
+        // events: 'Events',
+        // places: 'Places',
+        // agora: 'Agora',
+        // dao: 'DAO',
+        // blog: 'Blog',
+        // builder: 'Builder'
       },
       account: {
         signIn: 'Sign In',
@@ -117,17 +117,17 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
       <>
         <Menu.Item
           active={activePage === 'marketplace'}
-          href="https://market.decentraland.org"
+          href="#"
         >
           {i18n.menu.marketplace}
         </Menu.Item>
-        <Menu.Item
+        {/* <Menu.Item
           active={activePage === 'builder'}
           href="https://builder.decentraland.org"
         >
           {i18n.menu.builder}
-        </Menu.Item>
-        <Menu.Item
+        </Menu.Item> */}
+        {/* <Menu.Item
           active={activePage === 'docs'}
           href="https://docs.decentraland.org"
         >
@@ -156,7 +156,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
           href="https://decentraland.org/blog"
         >
           {i18n.menu.blog}
-        </Menu.Item>
+        </Menu.Item> */}
       </>
     )
   }
