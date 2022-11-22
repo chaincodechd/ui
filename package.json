@@ -1,6 +1,6 @@
 {
   "name": "@chaincodedev/decentraland-ui",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Decentraland's UI components and styles",
   "main": "lib/index.js",
   "module": "dist/index.js",

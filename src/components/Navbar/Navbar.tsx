@@ -66,7 +66,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
     middleMenu: null,
     i18n: {
       menu: {
-        marketplace: 'CCL Marketplace',
+        marketplace: 'Marketplace',
         // docs: 'Docs',
         // events: 'Events',
         // places: 'Places',
@@ -117,7 +117,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
       <>
         <Menu.Item
           active={activePage === 'marketplace'}
-          href="#"
+          href="/"
         >
           {i18n.menu.marketplace}
         </Menu.Item>
@@ -258,7 +258,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
           <div className="dcl navbar-menu">
             <NotMobile>
               <Menu secondary stackable>
-                <a className="dcl navbar-logo" href="https://decentraland.org">
+                <a className="dcl navbar-logo" href="/">
                   <Logo />
                 </a>
                 {this.renderLeftMenu()}
@@ -266,7 +266,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
             </NotMobile>
             <Mobile>
               <div className="dcl navbar-mobile-menu">
-                <a className="dcl navbar-logo" href="https://decentraland.org">
+                <a className="dcl navbar-logo" href="/">
                   <Logo />
                 </a>
                 <Header
