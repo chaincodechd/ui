@@ -1,6 +1,6 @@
 {
   "name": "@chaincodedev/decentraland-ui",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Decentraland's UI components and styles",
   "main": "lib/index.js",
   "module": "dist/index.js",
@@ -18,7 +18,7 @@
     "now-build": "build-storybook && cp ./static/* ./storybook-static && mv ./storybook-static ./public",
     "semantic-release": "semantic-release",
     "commitmsg": "validate-commit-msg"
-  },
+  },                                                                                                            
   "repository": {
     "type": "git",
     "url": "https://github.com/decentraland/ui.git"
