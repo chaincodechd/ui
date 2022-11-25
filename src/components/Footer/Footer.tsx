@@ -1,24 +1,24 @@
 import * as React from 'react'
 import { Container } from '../Container/Container'
 import {
-  LanguageDropdownI18N,
+  // LanguageDropdownI18N,
   LanguageDropdownProps,
-  LanguageDropdown
+  // LanguageDropdown
 } from '../LanguageDropdown/LanguageDropdown'
 import { Locale } from '../Language/Language'
 import './Footer.css'
 
 export type LinksI18N = {
-  home: React.ReactNode
-  privacy: React.ReactNode
-  terms: React.ReactNode
-  content: React.ReactNode
-  ethics: React.ReactNode
+  // home: React.ReactNode
+  // privacy: React.ReactNode
+  // terms: React.ReactNode
+  // content: React.ReactNode
+  // ethics: React.ReactNode
 }
 
 export type FooterI18N = {
-  dropdown: LanguageDropdownI18N
-  links: LinksI18N
+  // dropdown: LanguageDropdownI18N
+  // links: LinksI18N
 }
 
 export type FooterProps = {
@@ -34,30 +34,30 @@ export type FooterProps = {
 export class Footer extends React.PureComponent<FooterProps> {
   static defaultProps: Partial<FooterProps> = {
     i18n: {
-      dropdown: {
-        en: 'English',
-        es: 'Spanish',
-        fr: 'French',
-        ja: 'Japanese',
-        zh: 'Chinese',
-        ko: 'Korean'
-      },
-      links: {
-        home: 'Home',
-        privacy: 'Privacy Policy',
-        terms: 'Terms of Use',
-        content: 'Content Policy',
-        ethics: 'Code of Ethics'
-      }
+      // dropdown: {
+      //   en: 'English',
+      //   es: 'Spanish',
+      //   fr: 'French',
+      //   ja: 'Japanese',
+      //   zh: 'Chinese',
+      //   ko: 'Korean'
+      // },
+      // links: {
+      //   home: 'Home',
+      //   privacy: 'Privacy Policy',
+      //   terms: 'Terms of Use',
+      //   content: 'Content Policy',
+      //   ethics: 'Code of Ethics'
+      // }
     }
   }
 
   render(): JSX.Element {
     const {
-      locale,
-      locales,
-      onChange,
-      i18n,
+      // locale,
+      // locales,
+      // onChange,
+      // i18n,
       isFullscreen,
       className,
       isFullWidth
@@ -77,39 +77,39 @@ export class Footer extends React.PureComponent<FooterProps> {
     return (
       <Container className={classes}>
         <div className="main-footer">
-          <LanguageDropdown
+          {/* <LanguageDropdown
             locale={locale}
             locales={locales}
             onChange={onChange}
             upward
             direction="right"
-            i18n={i18n.dropdown}
-          />
-          <div className="links">
+            // i18n={i18n.dropdown}
+          /> */}
+          {/* <div className="links">
             <a href="https://decentraland.org">{i18n.links.home}</a>
             <a href="https://decentraland.org/privacy">{i18n.links.privacy}</a>
             <a href="https://decentraland.org/terms">{i18n.links.terms}</a>
             <a href="https://decentraland.org/content">{i18n.links.content}</a>
             <a href="https://decentraland.org/ethics">{i18n.links.ethics}</a>
-          </div>
+          </div> */}
         </div>
         <div className="secondary-footer">
           <div className="social-links">
-            <a href="https://dcl.gg/discord">
+            <a href="/">
               <i className="social-icon discord" />
             </a>
-            <a href="https://reddit.com/r/decentraland">
+            <a href="/">
               <i className="social-icon reddit" />
             </a>
-            <a href="https://github.com/decentraland">
+            <a href="https://github.com/chaincodechd">
               <i className="social-icon github" />
             </a>
-            <a href="https://twitter.com/decentraland">
+            <a href="https://twitter.com/ChaincodeLlp?t=5oMNqq4j6PpFcQ0zfrVcrw&s=09">
               <i className="social-icon twitter" />
             </a>
           </div>
           <div className="copyright">
-            © {new Date().getFullYear()} Decentraland
+            © {new Date().getFullYear()} Chaincode Consulting
           </div>
         </div>
       </Container>
